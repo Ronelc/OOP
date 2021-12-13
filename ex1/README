@@ -1,0 +1,29 @@
+ronelharedim
+
+208917641
+
+Ronel Charedim
+
+=============================
+=      File description     =
+=============================
+
+Book.java = This class represents a book, which has a title, author, year of publication and different literary aspects
+
+Patron.java = This class represents a library patron that has a name and assigns values to different literary
+ aspects of books.
+
+Library.java = This class represents a library, which hold a collection of books. Patrons can register at the library
+ to be able to check out books, if a copy of the requested book is available.
+
+ =============================
+ =          Design           =
+ =============================
+
+ I chose this design as these were the api instructions
+ I added a variable that counts the books the person takes from the library
+
+ =============================
+ =  Special behavior         =
+ =============================
+
