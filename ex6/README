@@ -1,0 +1,57 @@
+roniabend, ronel
+
+
+=============================
+=      File description     =
+=============================
+Package oop.ex6.main -
+Sjavac.java - has the main method of the program.
+TextProcessor.java - is composed in Sjava.java holds all the analyze of the file and calls the different classes.
+sJavaError.java - an error exception that says that something is invalid with the text we are checking.
+Scope.java- class that mentions in which scope we are in - method, if/while or global scope.
+   - GlobalScope.java - extends scope. has some different character that scope.
+Method.java - object of method. Has different characters.
+MethodValidate.java - static class that validates a method.
+Variable.java - object of variable.
+VariableValidate.java - static class that validates a variable.
+ConditionBlockValidate.java - static class that validates a condition block - if or while blocks.
+
+=============================
+=          Design           =
+=============================
+We used objects oriented method where we created an object for method and variable because we wanted to access them
+as an independent object without saving it somehow in a more complicated way.
+We used modularity where each part has a specific role and is independent, the different validates. In addition, we used
+the single choice principle where every definition is in a one specific place and if we'll need to change
+some types or else that are valid we'll do it in one place only.
+We used polymorphism where we used composition in order to save objects of variables,methods and even of
+the textProcessor in Sjavac. We used delegation where we used inside a method or a block methods of variable
+because it has the right knowledge for it.
+
+=============================
+=  Implementation details   =
+=============================
+we used a scanner in order to go through the file. after that we separated the text to global variables and lines of
+methods and maybe initialized variables, that are saved in lists or hashSets.
+We decided to handle the invalidates we found in the s-Java codes we checked, using simple error exception that will
+notify us that the file is invalid, instead of using returns of booleans.
+We decided to create a class, in order to keep the Sjavac clean, that goes through the text and calls the
+validator classes in order to validate something that is suspected as method\variable\conditionBlock(if\while).
+
+=============================
+=    Answers to questions   =
+=============================
+1) How we handled s-Java code error is described above.
+2) Classes - if we'll add handling classes we'll create for it a global scope (global scope is not static
+and can have multiple objects) and create new class that we'll define a class and its characters and a classValidate
+with its characters. In the textProcessor we'll add a method of analyzing classes before analyzing the methodBulks.
+Adding classes will only demand us to check validations of class, but all the other actions will stay the same (because
+class is just another scope). This is an example of the open-close principle we used.
+3) If we'll need to add new types of variables we can do it directly in S_JAVA_TYPES we keep in VariableValidate.
+that is an aspect of how to implement the single choice principle in our program.
+4) two main regular expressions -
+(in VariableValidate) RGX_VALID_NAME - a regex that checks if a variable name is valid - name of a variable has
+ different possibilities and it is seen in the regex. it can start with a letter and afterwards letters or numbers or
+ with an underscore. can end or start with empty spaces.
+(in TextProcessor) - "\\s*\\(*\\{*\\)*}*" - used in empty lines or end of blocks pattern. \\s helps us detecting both
+ tabs and spaces. this way we can make sure the line is only end of bracket with as many spaces between them.
