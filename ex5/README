@@ -1,0 +1,72 @@
+ronelharedim
+
+208917641
+
+Ronel Charedim
+
+=============================
+=      File description     =
+=============================
+
+package filters = Contains all filters
+1: All = all filter
+2: Between = between filter
+3: Contains = Contains filter
+4: FileFilter = filter by file
+5: Executable = Executable
+6: GreaterThan = Greater Than
+7: SmallerThan = SmallerThan
+8: Hidden = Hidden file
+9: Prefix = Prefix file
+10: Suffix = Suffix file
+11: Writable = Writable file
+12: Comparison = father class for: SmallerThan and GreaterThan
+13: Str = father class for: Contains, FileFilter, Prefix, Suffix
+14: Terms = father class for: Executable, Writable, Hidden
+
+DirectoryProcessor = Run the whole program
+Sort = The class that fulfills the order By Mergesort. and also makes the comparisons between the
+       elements sent to it according to the string they are sent with sortByAbs sortByType sortBySize
+FilterMain = The class identifies what filter to read and happens to the method that will
+             produce it
+OrderMain = The class identifies which order to make creates an object of the order
+Errors = The class tests the file for instructions on the filters and the order checks that they
+          meet the conditions and if it uses section at the end are given an array containing
+          objects of type section
+Warning = The class creates an object A containing the name of the filter and the name of their
+           order and location in the file
+Error1 = the class creates an object of type1error
+Error2 = the class creates an object of type2error
+
+=============================
+=          Design           =
+=============================
+1. I created a class that identifies which filter is given as a parameter and then happens to the
+   method that creates the object of that filter with the conditions needed for that filter
+2. Each class of filters is responsible for both the standard filter and the NOT filter
+3. I divided each class action into self so that each class was responsible for one thing
+4. Like what I did in the filter, I also made a class identifier in what order to do and then
+   creates its object
+5. I have created main classes, from which the filter classes inherit.
+
+=============================
+=    Answers to questions   =
+=============================
+
+1. I explained the previous section design
+2. I divided 2 errors into the type 2 error I caught when I went through the file of the filter
+   and order instructions while the type 1 error I caught when I ran on sections.
+   Also i did a test if each line was valid
+3. I sorted the files by using MargaSort and using Array
+   i used Margaret because it was the clearest to me to use and easy to write.
+   and also is complicity is O(n*log(n)) so he is very effective.
+
+
+
+
+
+
+
+
+
+
