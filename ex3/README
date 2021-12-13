@@ -1,0 +1,58 @@
+ronelharedim
+
+208917641
+
+Ronel Charedim
+
+=============================
+= Changes in my code        =
+=============================
+
+
+=============================
+=      File description     =
+=============================
+Locker.java = this class creat locker object.
+LockerTest = Tests for Locker class's methods.
+LongTermStorage.java = this class creat a LST object.
+LongTermTest = Tests for LongTermStorage class's methods.
+Spaceship.java = Creates a ship type object as per requirements.
+SpaceshipTest.java = Tests for Spaceship class's methods.
+SpaceshipDepositoryTest.java = this class run all tests for locker, Spaceship and LST classes.
+ParentClass.java = This is the classic parent from which Locker and LST are inherited.
+BoopingSite.java = Booping.com is a new hotel booking site, that allows for personalized search
+methodologies and we creat the compere method
+BoopingSiteTest.java = test for BoopingSite class's methods.
+SortClass.java = In this class, I created the methods of sorting.
+
+=============================
+=          Design           =
+=============================
+I put parentClass Class in this way that all the methods shared by Locker and LST will be there when
+they inherit it. I chose this design because it prevents code multiplication and is more efficient based on
+what we learned in the course.
+
+Both the locker and the LST I chose to store information by using MAP. I used it because it is the form that
+returns data most clearly, it is easy to understand what things are in storage and also according to the
+request in the exercise when I need to return a MAP.
+
+I used the hotel tests in the file with the most data to do a more thorough check.
+also i used the empty file tst2 to test my code.
+
+In the three methods in the file, I used Comparator, since working with it made me more
+comfortable to implement.
+
+In the getHotelsInCityByProximity, in order not to reach the code multiplication and according to the
+principles taught in the course, I preferred to do filtering by using the getHotelsInCityByRating and the
+second filtering I did by using the getHotelsByProximity
+
+
+=============================
+=  Implementation details   =
+=============================
+
+
+
+=============================
+=    Answers to questions   =
+=============================
