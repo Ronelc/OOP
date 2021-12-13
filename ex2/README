@@ -1,0 +1,47 @@
+ronelharedim
+
+208917641
+
+Ronel Charedim
+
+=============================
+= Changes in my code        =
+=============================
+
+
+=============================
+=      File description     =
+=============================
+aggressive class - making the aggressive space ship that want to fight
+basher class - making the basher space ship that wants to collide
+drunkard class - making the drunkard space ship that turn randomly, and shooting  every couple rounds
+human controlled class - making the human space ship that controlled by human
+runner class - making the runner ship that run away from other ships
+special class - making the spacial ship that turn to the closest ship, shooting on the closer ship and doing
+teleport every couple rounds.
+spaceshipfactory class - make array of ships depend on the args.
+spaceship class - class that contain all the functions that all the spaceships sharing
+
+
+=============================
+=          Design           =
+=============================
+i implemented special classes for all the ship because every ship has specific details,
+but there is functions that all the ships sharing so them exist in the class spaceships that is super
+class for all classes of the ships.
+all the class of the ship extends from the super class space ship.
+spaceship - findTheClosestShip(SpaceWars game) - i added function that found the closest ship.
+spaceship - addEnergy() - i added function that add energy.
+spaceship Accel - I have added a Boolean condition that tests whether to accelerate.
+spaceship Shield - I added a Boolean condition that changes when the shields are active.
+=============================
+=  Implementation details   =
+=============================
+1. for drunkard i choose random to decide where to turn. and shooting  every couple rounds
+2. for spacial i choose to make hum go to tha closest ship and if the ship close enough to other ship the
+spacial shoot and also do telepot every couple rounds.
+
+
+=============================
+=    Answers to questions   =
+=============================
