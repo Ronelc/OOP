@@ -1,0 +1,82 @@
+ronelharedim
+
+208917641
+
+Ronel Charedim
+
+=============================
+= Changes in my code        =
+=============================
+
+
+=============================
+=      File description     =
+=============================
+ClosedHashSet.java = Creates a data structure of type ClosedHashSet.
+OpenHashSet.java = Creates a data structure of type OpenHashSet.
+CollectionFacadeSet.java = Wraps an underlying Collection and serves to both simplify its API
+                           and give it a common type with the implemented SimpleHashSets.
+SimpleHashSet.java =  A superclass for implementations of hash-sets implementing the SimpleSet interface.
+SimpleSetPerformanceAnalyzer.java = The class performs several tests and measures the time it takes
+                                    for each of the 5 structure given below 1.openHashSet, 2.closedHashSet,
+                                    3.treeSet, 4.linkedList, 5.hashSett
+
+=============================
+=          Design           =
+=============================
+1. in closeHashSetTo know if there was an organ in the string set. I created another set of int
+   where 0 or 1 appears, and if I put a string into a string then I set the set of int to 1 And then
+   in the search for it if I came to a place in the set that appears null then I checked the same
+   index in the set of int and if there is a name 1 then the search will continue and if not then
+   the search will stop and return -1
+
+2. in openHashSet According to the idea given in the exercise, I put in each cell in an object
+   array that contains a linkedListSet on which I did the add, delete, and other tests that
+   requested
+
+3. Based on the principles given in the lesson, I made sure to avoid duplicate code and if 2 methods
+   do the same test then I unified them. For example, resizing the array has made a method that
+   decides whether to increase or decrease and a method that accepts only the parameters of what
+   size to change and resize to
+
+
+=============================
+=  Implementation details   =
+=============================
+
+
+
+=============================
+=    Answers to questions   =
+=============================
+1.  How i implemented OpenHashSet's table =
+    in openHashSet According to the idea given in the exercise, I put in each cell in an object array that
+    contains a linkedListSet on which I did the add, delete, and other tests that requested. also i made a
+    wrapper class for the linkedList.
+
+2.  How i implemented the deletion mechanism in ClosedHashSet =
+    First I checked if the organ is in the array and if so, I set a variable i and then a loop that
+    ran until I get the index of the word position in the array, Then I set the array in the same
+    place to null and I reduce the size by 1 and then check if the array size needs to be changed
+    and return true And if the organ did not show up in advance then I would return false
+
+3.
+    A. Since all the strings in this file have the same hashcode, the advantage of these data
+    structures has dropped and basically they have to add everything in the same place which
+    takes a long time.
+
+    B. On average hashset are the best realization. and I would use it for anything. After that in terms of
+    efficiency is the treeSet and then the openHashSet and then the closeHashSet and then the LinkedList.
+    The big disadvantage of openHashSet and close hashset and LinkedList Is in case you need to add owner
+    different hashcode. And yes it repeats itself in word search with the same hashcode Like the other words
+    in the array In case we search for a word with hashcode Different from all the words in the process set is
+    significantly streamlined and openHashSet gets even better what java hashset
+
+    C. The open rules were better than close. Except for one case where the close was a bit faster
+    Finding an str that is in the array since it has a more efficient organ finding system
+
+    D. With the exception of 2 cases where open was a little more effective, the default
+    realization was dramatically effective
+
+    E. Surprisingly, and their realization rules are just very effective, it probably comes from
+    experience and a good understanding in java.
